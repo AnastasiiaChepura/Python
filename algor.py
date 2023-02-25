@@ -1,6 +1,6 @@
 import random
 #Задаємо кількість кидків у мішень
-n = int(input("Введіть кількість кидків у мішень: "))
+n = int(input("Enter the count of shots at the target: "))
 count = 0
 
 #Задаємо функції для перевірки умов
@@ -21,8 +21,8 @@ for i in range(n):
     if check_1() or check_2():
         count += 1
 #Виводимо результат кількісь влучань, попавших в ціль
-print("Точка попала в мішень ",count," разів")
+print("The point hit the target ",count," times")
 #Обчислюмо площу заштрихованого діапазону
 square = count/n*4*4
 #Виводимо значення площі заштрихованого діапазону
-print("Площа = ",square," квадратних одиниць")
+print("Square = ",square," square units")
